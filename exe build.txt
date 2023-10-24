@@ -1,0 +1,4 @@
+1. pyinstaller IonConverter.py --onefile
+2. from PyInstaller.utils.hooks import collect_data_files 		at the top .spec
+3. And replace the datas=[] with datas=collect_data_files("tabula")
+4. PyInstaller IonConverter.spec
